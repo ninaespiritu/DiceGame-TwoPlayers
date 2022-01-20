@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Dice Game</title>
+	</head>
+
+	<body id="game">
+		<div class="header">
+			<h1>Dice Game</h1>
+			<p>The first person to reach a score of 40 wins!</p>
+			<p>If your dice rolls "1", you lose.</p>
+		</div>
+
+		<div class="areaAll">
+			<div id="areaPlayer1">
+				<p id="namePlayer1">Player 1</p>
+				<p class="score-container-1">
+					Score: <span id="scorePlayer1">-</span>
+				</p>
+
+				<div class="areaDice">
+					<div id="rollText1">Roll your dice!</div>
+					<div class="image-container-1">
+						<img id="imagePlayer1" />
+					</div>
+				</div>
+
+				<div class="buttons">
+					<button id="rollPlayer1">Roll</button>
+					<button id="passPlayer1">Pass</button>
+					<button id="playAgain1">Play Again</button>
+				</div>
+			</div>
+
+			<div id="areaPlayer2">
+				<p id="namePlayer2">Player 2</p>
+				<p class="score-container-2">
+					Score: <span id="scorePlayer2">-</span>
+				</p>
+
+				<div class="areaDice">
+					<div id="rollText2">Roll your dice!</div>
+					<div class="image-container-2">
+						<img id="imagePlayer2" />
+					</div>
+				</div>
+
+				<div class="buttons">
+					<button id="rollPlayer2">Roll</button>
+					<button id="passPlayer2">Pass</button>
+					<button id="playAgain2">Play Again</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

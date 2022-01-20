@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+body {
+	color: white;
+	background-color: #1b1e2b;
+	font-family: "Source Code Pro", "Roboto Mono", monospace;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 97vh;
+	transition: 0.5s;
+	margin: 0 0 10px;
+}
+h1 {
+	margin-bottom: 30px;
+}
+.header {
+	padding-bottom: 20px;
+	line-height: 14px;
+}
+.areaAll {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 75%;
+}
+.score-container-1,
+.score-container-2 {
+	background-color: #1b1e2b;
+	font-weight: 600;
+	border-radius: 10px;
+	width: 300px;
+	padding: 15px;
+	margin: 0px;
+}
+#namePlayer1,
+#namePlayer2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+#areaPlayer1,
+#areaPlayer2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #161822;
+	padding: 30px 0;
+	width: 42%;
+}
+.areaDice {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+	height: 400px;
+}
+#rollText1,
+#rollText2 {
+	font-size: 22px;
+	font-weight: 600;
+	font-family: "Source Code Pro", "Roboto Mono", monospace;
+	width: 200px;
+	/* text-transform: uppercase; */
+}
+.image-container-1,
+.image-container-2 {
+	display: none;
+	background-color: #1b1e2b;
+	border-radius: 100px;
+	padding: 15px;
+	margin: 15px;
+	width: 300px;
+}
+#imagePlayer1,
+#imagePlayer2 {
+	width: 100%;
+	height: auto;
+}
+#playAgain1,
+#playAgain2 {
+	display: none;
+	width: 100%;
+}
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 90%;
+}
+button {
+	color: white;
+	background-color: #1b1e2b;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: "Source Code Pro", "Roboto Mono", monospace;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10px;
+	padding: 20px 30px;
+	width: 45%;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #10121a;
+}
+
+@media all and (max-width: 1024px) {
+	.areaAll {
+		height: 70%;
+		
+	}
+	.header {
+		width: 80%;
+		line-height: 16px;
+	}
+	.score-container-1,
+	.score-container-2 {
+		width: 250px;
+	}
+	.image-container-1,
+	.image-container-2 {
+		border-radius: 90px;
+		max-width: 250px;
+		max-height: 250px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	#areaPlayer1,
+	#areaPlayer2 {
+		padding: 30px 0 15px;
+	}
+	.score-container-1,
+	.score-container-2 {
+		width: 80%;
+		padding: 15px;
+		margin: 0px;
+	}
+	#rollText1,
+	#rollText2 {
+		font-size: 22px;
+		font-weight: 600;
+		width: 150px;
+	}
+	.image-container-1,
+	.image-container-2 {
+		border-radius: 60px;
+		max-width: 150px;
+		max-height: 150px;
+	}
+	.buttons {
+		flex-direction: column;
+		justify-content: space-around;
+		width: 80%;
+	}
+	button {
+		padding: 15px 0;
+		margin: 7px 0;
+		width: 100%;
+	}
+	#playAgain1, #playAgain2 {
+		padding: 40px 0;
+	}
+}
